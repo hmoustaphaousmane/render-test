@@ -5,3 +5,21 @@ Content-Type: application/json
   "content": "VS Code rest client is a pretty handy tool",
   "important": true
 }
+
+###
+POST http://localhost:3000/api/notes
+Content-Type: application/json
+
+{
+  "content": "Ensure that everything still works",
+  "important": true
+}
+
+###
+POST http://localhost:3000/api/notes
+Content-Type: application/json
+
+{
+  "content": "CSS is easy",
+  "important": true
+}
