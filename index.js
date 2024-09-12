@@ -12,18 +12,18 @@ app.use(express.json())
 
 let notes = [
   {
-    id: "1",
-    content: "HTML is easy",
+    id: '1',
+    content: 'HTML is easy',
     important: true
   },
   {
-    id: "2",
-    content: "Browser can execute only JavaScript",
+    id: '2',
+    content: 'Browser can execute only JavaScript',
     important: false
   },
   {
-    id: "3",
-    content: "GET and POST are the most important methods of HTTP protocol",
+    id: '3',
+    content: 'GET and POST are the most important methods of HTTP protocol',
     important: true
   },
 ]
@@ -107,8 +107,8 @@ app.post('/api/notes', (request, response, next) => {
   })
 
   note.save()
-  .then(savedNote => response.json(savedNote))
-  .catch(error => next(error))
+    .then(savedNote => response.json(savedNote))
+    .catch(error => next(error))
 })
 
 const unknownEndpoint = (request, response) => {
