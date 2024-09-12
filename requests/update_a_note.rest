@@ -5,3 +5,12 @@ Content-Type: application/json
   "content": "CSS is easy",
   "important": false
 }
+
+###
+PUT http://localhost:3000/api/notes/66e1b570fe789779f70f0d93
+Content-Type: application/json
+
+{
+  "content": "lol",
+  "important": false
+}
