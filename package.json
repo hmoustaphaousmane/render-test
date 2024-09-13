@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon --inspect index.js",
-    "test": "node --test",
+    "start": "NODE_ENV=production node index.js",
+    "dev": "NODE_ENV=development nodemon --inspect index.js",
+    "test": "NODE_ENV=test node --test",
     "build:ui": "rm -rf dist && cd ../part2/part2-notes-frontend && npm run build && cp -r dist ../part3",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
     "lint": "eslint ."
@@ -24,6 +24,7 @@
     "@stylistic/eslint-plugin-js": "^2.8.0",
     "eslint": "^9.10.0",
     "globals": "^15.9.0",
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
   }
 }
