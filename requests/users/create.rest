@@ -12,6 +12,16 @@ POST http://localhost:3000/api/users
 Content-Type: application/json
 
 {
+  "username": "hassane",
+  "name": "Hassane Moustapha Ousmane",
+  "password": "password"
+}
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
   "username": "hmoustaphaousmane",
   "name": "Superuser",
   "password": "mars"
